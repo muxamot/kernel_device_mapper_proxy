@@ -1,23 +1,24 @@
 # [User Guide] Device Mapper Proxy
 
+[На русском языке User-Guide доступен по этой ссылке](./RU-GUIDE.md)
+
 ---
 
-## Kernel module compile
+## Kernel module compile, install & testing
 ### Step 0: Prerequisites
 
 This module is developed and tested in **Fedora 33**.  
 Kernel used in tests is `Linux 5.9.8-200.fc33.x86_64`  
 
 For successful module compilation you need `gcc` and
-`make` tools installed. Use dnf `install gcc make` to
+`make` tools installed. Use `dnf install gcc make` to
 install it. 
 
-Also linux kernel headers is needed. In Fedora they
-are provided by `kernel-devel` package. It can be 
+Also corresponding version of *linux kernel headers is needed*. 
+In Fedora they are provided by `kernel-devel` package. It can be 
 installed with the command `dnf install kernel-devel`.
-This package contains right version
 
-### Step 1: Compile
+### Step 1: Build
 Clone this repository and navigate into its directory. 
 Use `make` command to compile module:
 
